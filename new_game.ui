@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NewGameDialog</class>
+ <widget class="QDialog" name="NewGameDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>350</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>20</y>
+     <width>200</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>选择游戏模式</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>60</y>
+     <width>200</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#8c8c8c</string>
+   </property>
+   <property name="text">
+    <string>当前游戏进度将丢失</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="easyBtn">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>311</width>
+     <height>55</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-radius: 5px;
+    background-color: #e3e6ec;
+    color: #0072e3;
+	text-align:left;
+	padding-left: 10px;
+}
+QPushButton:hover {;
+    background-color: #dce0e5;
+}
+QPushButton:pressed {;
+    background-color: #cdd0d5;
+}</string>
+   </property>
+   <property name="text">
+    <string>简单</string>
+   </property>
+   <property name="icon">
+    <iconset resource="res/icons.qrc">
+     <normaloff>:/res/sudoku.png</normaloff>:/res/sudoku.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="normalBtn">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>166</y>
+     <width>311</width>
+     <height>55</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-radius: 5px;
+    background-color: #e3e6ec;
+    color: #0072e3;
+	text-align:left;
+	padding-left: 10px;
+}
+QPushButton:hover {;
+    background-color: #dce0e5;
+}
+QPushButton:pressed {;
+    background-color: #cdd0d5;
+}</string>
+   </property>
+   <property name="text">
+    <string>中等</string>
+   </property>
+   <property name="icon">
+    <iconset resource="res/icons.qrc">
+     <normaloff>:/res/sudoku.png</normaloff>:/res/sudoku.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>165</y>
+     <width>311</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(144, 144, 144)</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="hardBtn">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>222</y>
+     <width>311</width>
+     <height>55</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-radius: 5px;
+    background-color: #e3e6ec;
+    color: #0072e3;
+	text-align:left;
+	padding-left: 10px;
+}
+QPushButton:hover {;
+    background-color: #dce0e5;
+}
+QPushButton:pressed {;
+    background-color: #cdd0d5;
+}</string>
+   </property>
+   <property name="text">
+    <string>困难</string>
+   </property>
+   <property name="icon">
+    <iconset resource="res/icons.qrc">
+     <normaloff>:/res/sudoku.png</normaloff>:/res/sudoku.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>221</y>
+     <width>311</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(144, 144, 144)</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>277</y>
+     <width>311</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(144, 144, 144)</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="perfessionalBtn">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>278</y>
+     <width>311</width>
+     <height>55</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-radius: 5px;
+    background-color: #e3e6ec;
+    color: #0072e3;
+	text-align:left;
+	padding-left: 10px;
+}
+QPushButton:hover {;
+    background-color: #dce0e5;
+}
+QPushButton:pressed {;
+    background-color: #cdd0d5;
+}</string>
+   </property>
+   <property name="text">
+    <string>专家</string>
+   </property>
+   <property name="icon">
+    <iconset resource="res/icons.qrc">
+     <normaloff>:/res/sudoku.png</normaloff>:/res/sudoku.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="extremeBtn">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>334</y>
+     <width>311</width>
+     <height>55</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-radius: 5px;
+    background-color: #e3e6ec;
+    color: #0072e3;
+	text-align:left;
+	padding-left: 10px;
+}
+QPushButton:hover {;
+    background-color: #dce0e5;
+}
+QPushButton:pressed {;
+    background-color: #cdd0d5;
+}</string>
+   </property>
+   <property name="text">
+    <string>地狱</string>
+   </property>
+   <property name="icon">
+    <iconset resource="res/icons.qrc">
+     <normaloff>:/res/sudoku.png</normaloff>:/res/sudoku.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Line" name="line_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>333</y>
+     <width>311</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(144, 144, 144)</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>389</y>
+     <width>311</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(144, 144, 144)</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelBtn">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>460</y>
+     <width>311</width>
+     <height>55</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-radius: 10px;
+    background-color: #e3e6ec;
+    color: #0072e3;
+}
+QPushButton:hover {;
+    background-color: #dce0e5;
+}
+QPushButton:pressed {;
+    background-color: #cdd0d5;
+}</string>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>35</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="restartBtn">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>390</y>
+     <width>311</width>
+     <height>55</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-radius: 5px;
+    background-color: #e3e6ec;
+    color: #0072e3;
+	text-align:left;
+	padding-left: 18px;
+}
+QPushButton:hover {;
+    background-color: #dce0e5;
+}
+QPushButton:pressed {;
+    background-color: #cdd0d5;
+}</string>
+   </property>
+   <property name="text">
+    <string> 重新开始</string>
+   </property>
+   <property name="icon">
+    <iconset resource="res/icons.qrc">
+     <normaloff>:/res/back.png</normaloff>:/res/back.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>25</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

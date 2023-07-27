@@ -1,0 +1,22 @@
+<RCC>
+  <qresource prefix="res">
+    <file>Level.png</file>
+    <file>background.png</file>
+    <file>start.png</file>
+    <file>timer.png</file>
+    <file>sudoku.png</file>
+    <file>arrow-left.png</file>
+    <file>arrow-right.png</file>
+    <file>back.png</file>
+    <file>arrow-left.png</file>
+    <file>arrow-right.png</file>
+    <file>ok.png</file>
+    <file>start_grey.png</file>
+    <file>start_white.png</file>
+    <file>pause.png</file>
+    <file>start.png</file>
+    <file>back.png</file>
+    <file>clear.png</file>
+    <file>hint.png</file>
+  </qresource>
+</RCC>
